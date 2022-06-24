@@ -26,22 +26,27 @@
       }
     </style>
   </head>
+
   <body>
-    <h1>This is my website 2!</h1>
+    <h1>Welcome to clever FM</h1>
+
+    <h3>This demo shows loading of flutter code inside any website</h3>
+    <h3>Here we are loading flutter inside `script` tag in HTML</h3>
+
     <script>
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function() {
+        window.addEventListener("load", function () {
           navigator.serviceWorker.register("flutter_service_worker.js");
         });
       }
     </script>
-    <flutter-app width="400px" height="600px"></flutter-app>
+
+    <flutter-app width="400px" height="500px"></flutter-app>
     <script src="flutter-app.js"></script>
-    <br>
+
+    <br />
     <footer>
-      <span>Here is my footer!</span>
+      <span>Footer Note : Click on list item to start/top playing audio</span>
     </footer>
   </body>
 </html>
-
-
